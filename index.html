@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="estilos.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="src/css/estilos.css">
+  <link rel="stylesheet" href="src/css/modal.css">
+  <title>Attico</title>
 </head>
 <body>
   <section class="home" id="home">
@@ -13,7 +14,7 @@
       <div class="sidebar">
         <div class="logo">
       <figure class="logo-image">
-        <img src="images/attico.png" alt="">
+        <img src="src/images/attico.png" alt="">
       </figure>
         </div>
         <div class="sidebarlist">
@@ -53,7 +54,7 @@
       <ul class="optionsidebar">
         <li class="optionsidebartittle">
           <a href="#">
-            <img src="images/televisión.png" alt="" />
+            <img src="src/images/televisión.png" alt="" />
             <span>
               Televisión
             </span>
@@ -61,7 +62,7 @@
         </li>
         <li class="optionsidebartittle">
           <a href="#">
-            <img src="images/arte.png" alt="" />
+            <img src="src/images/arte.png" alt="" />
             <span>
               Arte
             </span>
@@ -69,7 +70,7 @@
         </li>
         <li class="optionsidebartittle">
           <a href="#">
-            <img src="images/fotografia.png" alt="" />
+            <img src="src/images/fotografia.png" alt="" />
             <span>
               Fotografía
             </span>
@@ -77,7 +78,7 @@
         </li>
         <li class="optionsidebartittle">
           <a href="#">
-            <img src="images/cineold.png" alt="" />
+            <img src="src/images/cineold.png" alt="" />
             <span>
               cine
             </span>
@@ -85,7 +86,7 @@
         </li>
         <li class="optionsidebartittle">
           <a href="#">
-            <img src="images/música.png" alt="" />
+            <img src="src/images/música.png" alt="" />
             <span>
               Música
             </span>
@@ -103,25 +104,46 @@
       </div>
       <div class="primary-user">
         <div class="user">
-          <img src="images/usuario.png" alt="">
+          <img src="src/images/usuario.png" alt="">
         </div>
       </div>
     <div class="primary-list">
         <h3>Más populares</h3>
-        <div class="primary-image" id="action">
-          <img src="images/maxbilllpelicula.jpg" width="50" height="50" alt="">
+        <div class="primary-image" id="artfilm">
+          <img src="src/images/maxbilllpelicula.jpg" width="50" height="50" alt="">
           <h4>The master of vision</h4>
           <h6>Art film</h6>
         </div>
         <div class="primary-list">
           <h3>Fotografía</h3>
-          <div class="primary-image" id="action">
-            <img src="images/mt.jpg" width="50" height="50" alt="">
+          <div class="primary-image" id="ph">
+            <img src="src/images/mt.jpg" width="50" height="50" alt="">
             <h4>Undressed testino</h4>
             <h6>Art film</h6>
           </div>
+        <div class="primary-list">
+            <h3>Televisión</h3>
+            <div class="primary-image" id="tv">
+              <img src="src/images/starck.jpg" width="50" height="50" alt="">
+              <h4>starck</h4>
+              <h6>tv</h6>
+            </div>
       </div>
     </div>
   </section>
+  <div class="overlay" id="overlay">
+  </div>
+  <div class="modal" id="modal">
+    <h1>Título de pelicula</h1>
+    <div class="modal-content">
+      <img src="" alt="" width="170" height="256">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione impedit maiores enim alias ex accusantium quasi cum autem, nam, voluptas tenetur laudantium quod! Odit voluptate illo, voluptas vel quia, quae.</p>
+    </div>
+    <div class="modal-buttons">
+      <button class="modal-btn primary" id="hide-modal">Cerrar Modal</button>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="src/js/home.js"></script>
 </body>
 </html>
